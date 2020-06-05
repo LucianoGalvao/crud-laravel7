@@ -4,16 +4,6 @@
 <div class="row">
  <div class="col-sm-8 offset-sm-2">
     <h1 class="display-3">Adicione um contato</h1>
-  <div>
-    @if ($errors->any())
-      <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-      </div><br />
-    @endif
       <form method="post" action="{{ route('contacts.store') }}">
           @csrf
           <div class="form-group">    
@@ -24,7 +14,7 @@
               <label for="sobrenome">Sobrenome:</label>
               <input type="text" class="form-control" name="sobrenome"/>
           </div>
-          <div class="form-group">
+          <div class="form-group" id="datetimepicker">
               <label for="nascimento">Data de Nascimento:</label>
               <input type="date" class="form-control" name="nascimento"/>
           </div>
