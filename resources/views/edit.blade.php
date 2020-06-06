@@ -19,6 +19,10 @@
                 <input type="date" class="form-control" name="nascimento"/>
             </div>
             <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email"/>
+          </div>
+            <div class="form-group">
                 <label for="telefone">Telefone:</label>
                 <input type="text" class="form-control" name="telefone"/>
             </div>
